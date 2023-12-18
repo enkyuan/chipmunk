@@ -39,9 +39,9 @@ void Emulator::LoadROM(char const * fileName) {
 
         for (long i = 0; i < size; i++) {
             memory[START_ADDRESS + i] = buffer[i];
-
-            delete[] buffer;
         }
+
+        delete[] buffer;
     }
 }
 
