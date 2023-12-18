@@ -4,5 +4,5 @@ project(chipmunk)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(chipmunk main.cpp
-        Emulator.tpp
-        Emulator.cpp)
+        src/Emulator.tpp
+        src/Emulator.cpp)
