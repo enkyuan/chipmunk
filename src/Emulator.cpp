@@ -21,7 +21,7 @@ void Emulator::initialize() {
 }
 
 void Emulator::loadFontSet() {
-    
+
 }
 
 void Emulator::LoadROM(const char *fileName) {
