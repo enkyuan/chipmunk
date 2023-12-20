@@ -30,6 +30,7 @@ public:
     ~Emulator();                        //  destructor
 
     void initialize();
+    static void loadFontSet();
     void LoadROM(const char *fileName); //  ...
     void emulateCycle();
     void displayScreen();

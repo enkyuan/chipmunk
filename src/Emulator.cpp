@@ -3,7 +3,6 @@
 //
 
 #include "Emulator.tpp"
-#include "Memory.h"
 
 const unsigned START_ADDRESS = 0x200;
 const unsigned int FONTSET_START_ADDRESS = 0x50;
@@ -18,7 +17,11 @@ Emulator::~Emulator() {
 }
 
 void Emulator::initialize() {
+    loadFontSet();
+}
 
+void Emulator::loadFontSet() {
+    
 }
 
 void Emulator::LoadROM(const char *fileName) {
