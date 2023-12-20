@@ -47,14 +47,20 @@ void Emulator::emulateCycle() {
 
 }
 
-void Emulator::displayScreen() {
-
+void Emulator::fetch() {
+    pc += 2;
 }
 
-void Emulator::getOpcode() {
-
+void Emulator::decode() {
+    // TODO: implement this
+    switch () {
+        case x:
+            break;
+        case x:
+            break;
+    }
 }
 
-void Emulator::execOpcode() {
+void Emulator::execute() {
 
 }

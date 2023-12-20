@@ -33,11 +33,11 @@ public:
     static void loadFontSet();
     void LoadROM(const char *fileName); //  ...
     void emulateCycle();
-    void displayScreen();
 
 private:
-    void getOpcode();
-    void execOpcode();
+    void fetch();
+    void decode();
+    void execute();
 };
 
 #endif //CHIPMUNK_EMULATOR_TPP
