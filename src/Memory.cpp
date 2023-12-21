@@ -4,14 +4,8 @@
 
 #include "Memory.tpp"
 
-Memory::Memory() {
+Memory::Memory() {}
 
-}
+Memory::~Memory() {}
 
-Memory::~Memory() {
-
-}
-
-void Memory::intialize() {
-
-}
+void Memory::intialize() {}
