@@ -12,7 +12,7 @@
 
 using namespace std;
 
-class Emulator {
+class CPU {
 public:
     uint8_t registers[16]{};            //  16 8-bit registers
     uint8_t memory[4096]{};             //  4 KB of memory
@@ -26,8 +26,8 @@ public:
     uint32_t display[64 * 32]{};        //  64 x 32 video
     uint16_t opcode;                    //  ...
 
-    Emulator();                         //  constructor
-    ~Emulator();                        //  destructor
+    CPU();                         //  constructor
+    ~CPU();                        //  destructor
 
     void initialize();
     static void loadFontSet();

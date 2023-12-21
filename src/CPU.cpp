@@ -2,29 +2,27 @@
 // Created by Enkang Yuan on 12/18/23.
 //
 
-#include "Emulator.tpp"
+#include "CPU.tpp"
 
 const unsigned START_ADDRESS = 0x200;
 const unsigned int FONTSET_START_ADDRESS = 0x50;
 
-Emulator::Emulator() {
+CPU::CPU() {
     pc = START_ADDRESS;
     // TODO: implement this
 }
 
-Emulator::~Emulator() {
+CPU::~CPU() {
     // TODO: implement this
 }
 
-void Emulator::initialize() {
+void CPU::initialize() {
     loadFontSet();
 }
 
-void Emulator::loadFontSet() {
+void CPU::loadFontSet() {}
 
-}
-
-void Emulator::LoadROM(const char *fileName) {
+void CPU::LoadROM(const char *fileName) {
     ifstream file(fileName, ios::binary | ios::ate);
 
     if(file.is_open()) {
@@ -43,15 +41,13 @@ void Emulator::LoadROM(const char *fileName) {
     }
 }
 
-void Emulator::emulateCycle() {
+void CPU::emulateCycle() {}
 
-}
-
-void Emulator::fetch() {
+void CPU::fetch() {
     pc += 2;
 }
 
-void Emulator::decode() {
+void CPU::decode() {
     // TODO: implement this
     switch () {
         case x:
@@ -61,6 +57,4 @@ void Emulator::decode() {
     }
 }
 
-void Emulator::execute() {
-
-}
+void CPU::execute() {}

@@ -1,7 +1,28 @@
 #include <iostream>
-#include "Emulator.tpp"
+#include <thread>
+#include <chrono>
+
+#include "CPU.tpp"
+#include "Memory.tpp"
+#include "Display.tpp"
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    CPU newCPU;
+    Memory emulatorMemory;
+    Display newDisplay;
+
+    newCPU.initialize();
+    emulatorMemory.initialize();
+
+    while (true) {
+        newCPU.emulateCycle();
+
+        newDisplay.displayScreen();
+
+        this_thread::sleep_for(chrono::milliseconds(10));
+    }
+
     return 0;
 }

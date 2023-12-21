@@ -3,7 +3,7 @@
 //
 
 #include <cstdint>
-#include "Emulator.tpp"
+#include "CPU.tpp"
 
 #ifndef CHIPMUNK_MEMORY_H
 #define CHIPMUNK_MEMORY_H

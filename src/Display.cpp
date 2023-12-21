@@ -4,14 +4,8 @@
 
 #include "Display.tpp"
 
-Display::Display() {
+Display::Display() {}
 
-}
+Display::~Display() {}
 
-Display::~Display() {
-
-}
-
-void Display::displayScreen(const uint8_t *display) {
-
-}
+void Display::displayScreen(const uint8_t *display) {}
