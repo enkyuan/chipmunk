@@ -3,17 +3,23 @@
 //
 
 #include "CPU.tpp"
+#include "Memory.tpp"
 
 const unsigned START_ADDRESS = 0x200;
 const unsigned int FONTSET_START_ADDRESS = 0x50;
 
 CPU::CPU() {
-    pc = START_ADDRESS;
     // TODO: implement this
+    pc = START_ADDRESS;
+
+    for (unsigned int i = 0; i < FONTSET_SIZE; ++i) {
+        memory[FONTSET_START_ADDRESS + i] = fontset[i];
+    }
 }
 
 CPU::~CPU() {
     // TODO: implement this
+
 }
 
 void CPU::initialize() {
@@ -22,7 +28,7 @@ void CPU::initialize() {
 
 void CPU::loadFontSet() {}
 
-void CPU::LoadROM(const char *fileName) {
+void CPU::loadROM(const char *fileName) {
     ifstream file(fileName, ios::binary | ios::ate);
 
     if(file.is_open()) {
@@ -44,6 +50,7 @@ void CPU::LoadROM(const char *fileName) {
 void CPU::emulateCycle() {}
 
 void CPU::fetch() {
+    // TODO: implement this
     pc += 2;
 }
 
@@ -58,3 +65,8 @@ void CPU::decode() {
 }
 
 void CPU::execute() {}
+
+// opcodes
+
+
+

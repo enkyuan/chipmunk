@@ -10,4 +10,5 @@ add_executable(chipmunk src/main.cpp
         src/Display.tpp
         src/Display.cpp
         src/Memory.cpp
+        src/Opcodes.cpp
 )

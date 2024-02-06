@@ -33,7 +33,7 @@ public:
 
     void initialize();
     static void loadFontSet();
-    void LoadROM(const char *fileName); //  ...
+    void loadROM(const char *fileName); //  ...
     void emulateCycle();
 
 private:

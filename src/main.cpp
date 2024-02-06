@@ -13,6 +13,8 @@ int main() {
     Memory emulatorMemory;
     Display newDisplay;
 
+    // TODO: change filename to relative path
+
     newCPU.initialize();
     emulatorMemory.initialize();
 
